@@ -1,0 +1,38 @@
+3)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>output will print in console</h2>
+
+<script>
+var distance = [50, 55, 57, 58, 60];
+for (var a = 0; a < distance.length; a++) {
+    {
+        for (var b = 0; b < distance.length; b++) {
+            {
+                for (var c = 0; c < distance.length; c++) {
+                    {
+                        if (a < b && b < c) {
+                            var x = distance[a];
+                            var y = distance[b];
+                            var z = distance[c];
+                            var count = x + y + z;
+                            if (169 < count && count < 174) {
+                                console.info("[" + x + "," + y + "," + z + "]");
+                            }
+                        }
+                    }
+                    ;
+                }
+            }
+            ;
+        }
+    }
+    ;
+}
+</script>
+
+</body>
+</html>

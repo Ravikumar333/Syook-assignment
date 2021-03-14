@@ -1,0 +1,70 @@
+4)
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p>
+
+<p id="demo"></p>
+
+<script>
+var  fighters = [["Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega"],
+			  ["Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"]
+];
+var first =  fighters[1,1][5];
+var a=0,b=0;
+var len = fighters[0,1].length-1;
+var resultarr =
+document.getElementById("demo").innerHTML = first;
+
+	function gfg_Run() {
+			el_down.innerHTML = str;
+		}
+		document.onkeydown = function(e) {
+			switch (e.keyCode) {
+				case 37:
+                	b = b-1;
+                    if(b<0)
+                    {
+                    	b = len-1
+                    }
+					str = 'Left Key pressed!';
+					console.log("Left");
+                    console.log(fighters[0,a][b]);
+					break;
+				case 38:
+                	if(a==0){a =1;}
+                    else{a=0}
+					str = 'Up Key pressed!';
+                    console.log(fighters[0,a][b]);
+					console.log("up");
+					break;
+				case 39:
+               		 b = b+1;
+                    if(b>len)
+                    {
+                    	b = 0
+                    }
+					str = 'Right Key pressed!';
+                    console.log(fighters[0,a][b]);
+					console.log("Right");
+					break;
+				case 40:
+                	if(a==0){a =1;}
+                    else{a=0}
+					str = 'Down Key pressed!';
+                    console.log(fighters[0,a][b]);
+					console.log("Down");
+					break;
+			}
+		};
+</script>
+
+</body>
+</html>
+
+
+
+
